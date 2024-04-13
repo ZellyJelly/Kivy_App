@@ -1,1 +1,6 @@
-from kivy.app import A
+from kivy.app import App 
+
+class MyApp(App):
+    pass
+
+MyApp().run()
