@@ -1,11 +1,25 @@
 #:kivy 2.3.0
+WidgetsExample:
 
-Scroll_View:
+<WidgetsExample>:
+   cols: 3
+   ToggleButton:
+      size: 0.5, 0.5
+      on_state: root.toggle_counter(self) 
+   Button:
+      text: "COUNT"
+      on_press: root.change_text()
+      font_name: "fonts/Lcd.ttf"
+      font_size: "50dp"
+      color: 1, 0, 0, 1
+      background_color: 0, 0.5, 0, 1
+   Label:
+      id: thingy
+      size_hint: 0.5, 0.5
+      text: root.my_text
+      font_name: "fonts/Lcd.ttf"
 
-<Scroll_View@ScrollView>:
-   NewLayout: 
-      size_hint: 1 , None
-      height: self.minimum_height
-        
+      
+
 
 
